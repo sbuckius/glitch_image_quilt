@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Collaborative Quilt (No Storage)</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-database-compat.js"></script>
+    <style>
+      body { font-family: sans-serif; padding: 10px; }
+      button { margin: 5px; padding: 8px 12px; }
+    </style>
+  </head>
+  <body>
+    <h2 style="font-family: sans-serif; text-align: left;">
+  Upload your glitch image and drag it onto a spot on the quilt.
+</h2>
+    <input type="file" id="imgUpload" accept="image/*">
+    <button onclick="resetQuilt()">Reset Quilt</button>
+    <button onclick="saveQuilt()">Save Quilt as Image</button>
+    <script src="glitch_quilt_alterable.js"></script>
+  </body>
+</html>
